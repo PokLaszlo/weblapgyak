@@ -8,11 +8,12 @@ html{
     font-size: 18px; 
 }
 body{
-    
+    background: #926b008e;
 }
 .container{
     max-width: 900px;
     margin:0 auto;
+    background-color: white;
 }
 .header{
     background: url('../image/logo.jpg');
@@ -26,7 +27,12 @@ h1{
 }
 ul{
     list-style: none;
-}
+}    
+.ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 li{
     float: left;
     width: 12.5%;
@@ -41,7 +47,7 @@ li:last-child{
     border-right: none;
 }
 a{
-    width: 100%;
+
     background: orange;
     display: inline-block;
     padding: 10px;
@@ -52,4 +58,23 @@ a{
 a:hover{
     color:white;
     text-decoration: underline;
+}
+.news{
+    width: 50%;
+    float: left;
+    text-align:justify;
+    padding:0 10px;
+}
+content::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.kep1{
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+.kep2{
+    float: right;
+    margin: 0 0 5px 5px
 }
